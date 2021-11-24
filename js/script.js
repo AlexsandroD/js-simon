@@ -43,9 +43,12 @@ function countDown(){
        }
     }
     if(count == numeri.length){
+        document.querySelector('.container-numeri').classList.remove('white');
         document.querySelector('.vinto-perso').innerHTML = `<h2>Hai vinto! ${count}/5</h2>`;
     }else{
+            document.querySelector('.container-numeri').classList.remove('white');
             document.querySelector('.vinto-perso').innerHTML = `<h2>Hai perso! ${count}/5</h2>`;
+            document.querySelector('.your-numbers').innerHTML =`<h2>I tuoi numeri: ${tentativi}</h2>`;
     }
     
 }
@@ -55,6 +58,7 @@ const change = setTimeout(changeClass, 29000);
 function changeClass(){
     document.querySelector('.container-numeri').classList.add('white');
 }
+
 
 
 
