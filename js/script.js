@@ -27,12 +27,12 @@ function creaNumeri(arrayNumeri){
     numberContainer.innerHTML = arrayNumeri;
 }
 
-const time = setTimeout(countDown, 3000);
+const time = setTimeout(countDown, 30000);
 
 function countDown(){
   
     let count = 0;
-    for(let k = 0; k < 1; k++){
+    for(let k = 0; k < 5; k++){
         const guess = parseInt(prompt
         ('inserisci un valore'));
 
@@ -50,7 +50,7 @@ function countDown(){
     
 }
 
-const change = setTimeout(changeClass, 2900);
+const change = setTimeout(changeClass, 29000);
 
 function changeClass(){
     document.querySelector('.container-numeri').classList.add('white');
