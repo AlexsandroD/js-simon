@@ -27,15 +27,21 @@ function creaNumeri(arrayNumeri){
     numberContainer.innerHTML = arrayNumeri;
 }
 
-const time = setTimeout(countDown, 30000);
+const time = setTimeout(countDown, 3000);
 
 function countDown(){
-  
+    let guess = 0;
     let count = 0;
     for(let k = 0; k < 5; k++){
-        const guess = parseInt(prompt
-        ('inserisci un valore'));
-
+        
+        guess = parseInt(prompt
+            ('inserisci un valore'));
+            
+        while(guess < 0 || isNaN(guess)){
+            guess = parseInt(prompt
+        ('inserisci un valore corretto'));
+        }
+            
         tentativi.push(guess);
 
        if(numeri.includes(guess)){
@@ -53,7 +59,7 @@ function countDown(){
     
 }
 
-const change = setTimeout(changeClass, 29000);
+const change = setTimeout(changeClass, 2900);
 
 function changeClass(){
     document.querySelector('.container-numeri').classList.add('white');
