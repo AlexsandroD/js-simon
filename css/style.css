@@ -23,11 +23,24 @@ h1{
 
 #numeri{
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     width: 300px;
     aspect-ratio: 3;
     background-color: white;
+    word-spacing: 3px;
+    font-size: 30px;
+    font-weight: 600;
 
 
+}
+
+.vinto-perso{
+    margin-top: 10px;
+    text-transform: uppercase;
+
+}
+
+.white{
+    color: white;
 }
